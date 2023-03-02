@@ -1,0 +1,41 @@
+{
+  "name": "Google Srvice Accounts Generator Telegram Bot",
+  "description": "Google Srvice Accounts Generator Telegram Bot",
+  "repository": "https://github.com/modbots/Google-Service-Accounts-Generator-Bot",
+  "logo": "https://github.com/modbots/drive2drive/raw/main/credentials/moedyiu.jpg",
+  "keywords": ["Telegram", "Google Drive", "Service Accounts"],
+  "env": {
+    "ENV": {
+      "description": "Set it to anything to enable configuration by environment variables.",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "Get it from @BotFather"
+    },
+    "APP_ID": {
+      "description": "Your API_ID, Get it from https://my.telegram.org/apps"
+    },
+    "API_HASH": {
+      "description": "Your API_HASH, Get it from https://my.telegram.org/apps"
+    },
+    "SUDO_USERS": {
+      "description": "List of sudo users ids, seperated by space.",
+      "value": "999197022 939425014"
+    },
+    "SUPPORT_CHAT_LINK": {
+      "description": "Support Chat link in valid url format."
+    },
+    "DOWNLOAD_DIRECTORY": {
+      "description": "Custom path for downloads. Must end with a forward slash.",
+      "value": "./downloads/"
+    }
+  },
+   "addons": [{
+    "plan": "heroku-postgresql"
+  }],
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
